@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public interface IEntity
+    public interface IAggregateRoot
     {
-        Guid Id { get; set; }
-    }
-    public interface IAggregateRoot : IEntity
-    {
-
+        string UniqueId { get; }
     }
 }
